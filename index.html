@@ -7,6 +7,36 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com">
     </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-867824787"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-867824787');
+</script>
+    
+    <!-- Event snippet for 购买 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-867824787/KMr_CPSOruEbEJPp550D',
+      'transaction_id': '',
+      'event_callback': callback
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+  });
+  return false;
+}
+</script>
+    
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -48,7 +78,8 @@
     </style>
     <script>
         function k2() {
-            window.location.href = "https://www.google.com";
+            gtag_report_conversion('https://www.google.com');
+            //window.location.href = "https://www.google.com";
         }
     </script>
 </head>
