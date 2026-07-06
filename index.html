@@ -16,7 +16,7 @@
                         sans: ['"Noto Sans KR"', 'sans-serif'],
                     },
                     colors: {
-                        'brand-main': '#0f7b6b',    // 청록 (지식, 차분한 느낌)
+                        'brand-main': '#0f7b6b',
                         'brand-light': '#d4f0f0',
                         'brand-bg': '#f0f7f6',
                     }
@@ -109,7 +109,6 @@
                     container.style.paddingBottom = '80px';
                 }
             }
-            // ✅ 전역 클릭 이벤트 제거 – 오직 버튼만 동작
         });
     </script>
     <style>
@@ -259,7 +258,7 @@
             </button>
         </header>
 
-        <!-- ===== ✅ 완전히 새롭게 디자인된 HERO (首屏) ===== -->
+        <!-- ===== HERO (首屏) ===== -->
         <section class="px-4 pt-4 pb-6 bg-gradient-to-b from-brand-light via-white to-white">
             <!-- 태그 -->
             <div class="text-center">
@@ -268,7 +267,7 @@
                 </span>
             </div>
 
-            <!-- 이미지를 맨 위로 배치 (新布局) -->
+            <!-- 이미지 -->
             <div class="relative w-full rounded-2xl overflow-hidden shadow-lg mb-5">
                 <img src="img/1.jpg" class="w-full h-auto block" alt="지식 학습 이미지" />
                 <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 shadow-md flex items-center gap-2 border border-gray-100">
@@ -277,14 +276,14 @@
                 </div>
             </div>
 
-            <!-- 타이틀 & 설명 (이미지 아래) -->
+            <!-- 타이틀 & 설명 -->
             <h1 class="text-2xl font-black leading-tight mb-2 text-gray-900 text-center">
                 지식이 당신의<br />
                 <span class="text-brand-main">미래를 바꿉니다</span>
             </h1>
             <p class="text-sm text-gray-600 mb-5 text-center">함께 배우고 성장하는 지식 커뮤니티</p>
 
-            <!-- 특장점 3개 (카드형, 색상 변경) -->
+            <!-- 특장점 3개 -->
             <div class="grid grid-cols-3 gap-3 mb-5">
                 <div class="bg-white rounded-2xl p-3 text-center shadow-md border border-brand-main/10">
                     <i class="fa-regular fa-clock text-brand-main text-xl"></i>
@@ -300,15 +299,15 @@
                 </div>
             </div>
 
-            <!-- CTA 버튼 (유일한 액션) -->
+            <!-- CTA 버튼 (✅ 새文案: 9를 보내고 커뮤니티 참여) -->
             <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-4 px-6 font-bold text-lg relative shadow-lg hover:bg-teal-700 transition text-center cursor-pointer no-select">
                 <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
-                지금 학습 시작하기
+                9를 보내고 커뮤니티 참여
                 <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
             </a>
         </section>
 
-        <!-- ===== 3 Schritte (학습 단계) ===== -->
+        <!-- ===== 3 Schritte ===== -->
         <section class="px-4 py-8 bg-brand-bg">
             <h3 class="text-center font-bold text-xl mb-6 text-gray-800">
                 <span class="text-brand-main text-3xl">3</span> 학습 단계
@@ -336,12 +335,9 @@
             </div>
         </section>
 
-        <!-- ===== Bild ===== -->
-        <section class="px-4 pt-6">
-            <img src="img/2.jpg" class="w-full h-auto rounded-lg shadow-sm block" alt="스터디 모임" />
-        </section>
+        
 
-        <!-- ===== 장점 (학습의 장점) ===== -->
+        <!-- ===== 장점 ===== -->
         <section class="px-4 py-6 bg-brand-bg border-t border-b">
             <h3 class="text-center font-bold text-lg mb-6 text-gray-800">학습의 장점</h3>
             <div class="grid grid-cols-4 gap-2">
@@ -371,9 +367,10 @@
         <!-- ===== Untere CTA ===== -->
         <section class="px-4 pt-8 pb-4 relative">
             <p class="text-center font-bold text-sm mb-4">지금 바로 참여하세요</p>
+            <!-- ✅ 새文案 -->
             <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-teal-700 transition text-center mb-3 cursor-pointer no-select">
                 <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
-                학습 커뮤니티 참여하기
+                9를 보내고 커뮤니티 참여
                 <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
             </a>
             <p class="text-center text-gray-500 text-xs font-bold tracking-widest mb-6">＼ 구독 의무 없음 – 언제든지 자유롭게 ／</p>
@@ -402,11 +399,12 @@
     </div>
     <!-- /.page-container -->
 
-    <!-- ===== 悬浮按钮 – 仅移动端 ===== -->
+    <!-- ===== 悬浮按钮 (移动端) ===== -->
     <div class="fixed bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white via-white/95 to-transparent md:hidden z-50 float-btn" style="padding-bottom: max(12px, env(safe-area-inset-bottom, 12px));">
+        <!-- ✅ 새文案 -->
         <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-3.5 px-6 font-bold text-base relative custom-shadow hover:bg-teal-700 transition text-center cursor-pointer no-select shadow-lg active:scale-[0.98]">
             <i class="fa-regular fa-envelope text-xl absolute left-4 top-1/2 -translate-y-1/2"></i>
-            학습 커뮤니티 참여하기
+            9를 보내고 커뮤니티 참여
             <i class="fa-solid fa-chevron-right absolute right-4 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-5 h-5 flex items-center justify-center text-xs"></i>
         </a>
     </div>
