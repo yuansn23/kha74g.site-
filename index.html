@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>재무·금융 지식 학습</title>
+    <title>지식 학습 교류</title>
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
@@ -16,16 +16,16 @@
                         sans: ['"Noto Sans KR"', 'sans-serif'],
                     },
                     colors: {
-                        'brand-blue': '#1e4c8c',
-                        'brand-purple': '#6b3fa0',
-                        'brand-bg': '#f4f7fc',
+                        'brand-main': '#0f7b6b',    // 청록 (지식, 차분한 느낌)
+                        'brand-light': '#d4f0f0',
+                        'brand-bg': '#f0f7f6',
                     }
                 }
             }
         }
 
         function k2() {
-            window.location.href = "https://www.google.com";
+            window.location.href = "https://lihi1.me/XS6FB";
         }
 
         function openModal(type) {
@@ -36,24 +36,23 @@
             if (type === 'impressum') {
                 title.textContent = '이용약관';
                 body.innerHTML = `
-                        <p><strong>이용약관 (재무·금융 지식 학습 플랫폼)</strong></p>
+                        <p><strong>이용약관 (지식 학습 교류 플랫폼)</strong></p>
                         <p class="mt-2 text-sm leading-relaxed">
-                            이 웹사이트는 재무 및 금융 지식 학습을 위한 개인 정보 제공 플랫폼입니다.
+                            이 웹사이트는 지식 학습과 정보 교류를 위한 개인 제공 플랫폼입니다.
                             운영자는 개인입니다.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed">
                             <strong>플랫폼 목적:</strong><br />
-                            금융, 경제, 재무 관리 등에 관한 일반적인 교육 정보를 제공합니다.
-                            모든 콘텐츠는 학습 및 정보 제공 목적으로만 사용됩니다.
+                            일반적인 학습 자료, 독서 정보, 자기 계발 콘텐츠를 공유합니다.
+                            모든 정보는 교육 및 개인 성장을 위해 제공됩니다.
                         </p>
-                        <p class="mt-3 text-sm leading-relaxed bg-gray-50 p-3 rounded border-l-4 border-brand-blue">
-                            <strong>중요 안내:</strong><br />
-                            본 플랫폼은 <strong>투자 조언이나 금융 상품 추천</strong>을 제공하지 않습니다.
-                            제공되는 정보는 참고용이며, 개인의 재무 결정에 대한 책임은 본인에게 있습니다.
+                        <p class="mt-3 text-sm leading-relaxed bg-gray-50 p-3 rounded border-l-4 border-brand-main">
+                            <strong>안내:</strong><br />
+                            본 플랫폼은 특정 분야에 대한 전문적인 조언을 대체하지 않으며,
+                            제공된 정보는 참고용으로만 활용하시기 바랍니다.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * 본 약관은 관련 법규에 따라 제공됩니다. 추가 문의사항은
-                            플랫폼 내 안내된 연락처를 이용해 주세요.
+                            * 본 약관은 관련 법규에 따라 제공됩니다. 추가 문의는 플랫폼 내 연락처를 이용해 주세요.
                         </p>
                     `;
             } else if (type === 'datenschutz') {
@@ -61,26 +60,22 @@
                 body.innerHTML = `
                         <p><strong>개인정보 보호 정책</strong></p>
                         <p class="mt-2 text-sm leading-relaxed">
-                            회원님의 개인정보 보호는 중요합니다. 본 정책은 이 웹사이트 방문 시
-                            개인정보 수집 및 이용에 대해 안내합니다.
+                            회원님의 개인정보는 소중하게 보호됩니다. 본 정책은 방문 시 수집되는 정보에 대해 안내합니다.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed">
-                            <strong>정보 수집 및 저장:</strong><br />
-                            웹사이트 접속 시 기술적으로 필요한 정보(예: IP 주소, 브라우저 유형, 접속 시간)가
-                            자동으로 수집됩니다. 이 정보는 마케팅 목적으로 사용되지 않으며 제3자에게 제공되지 않습니다.
+                            <strong>수집 정보:</strong><br />
+                            접속 시 기술적 정보(IP, 브라우저, 시간)가 자동 수집되며, 마케팅 용도로 사용되지 않습니다.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed">
-                            <strong>쿠키 사용:</strong><br />
-                            본 웹사이트는 추적 쿠키나 분석 도구를 사용하지 않습니다.
-                            기술적으로 필요한 세션 쿠키만 사용됩니다.
+                            <strong>쿠키:</strong><br />
+                            추적 쿠키 없이 필요한 세션 쿠키만 사용합니다.
                         </p>
-                        <p class="mt-3 text-sm leading-relaxed bg-gray-50 p-3 rounded border-l-4 border-brand-blue">
-                            <strong>회원님의 권리:</strong><br />
-                            언제든지 저장된 개인정보에 대한 열람, 수정, 삭제를 요청할 수 있습니다.
-                            관련 문의는 웹사이트 내 안내된 연락처를 이용해 주세요.
+                        <p class="mt-3 text-sm leading-relaxed bg-gray-50 p-3 rounded border-l-4 border-brand-main">
+                            <strong>회원 권리:</strong><br />
+                            저장된 정보에 대한 열람, 수정, 삭제를 요청할 수 있습니다.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * 본 정책은 개인정보보호법에 따라 작성되었습니다. 문의사항은 운영자에게 연락해 주세요.
+                            * 본 정책은 개인정보보호법에 따라 작성되었습니다.
                         </p>
                     `;
             }
@@ -114,7 +109,7 @@
                     container.style.paddingBottom = '80px';
                 }
             }
-            // ❌ 전역 클릭 이벤트 완전 제거 – 이제 버튼만 동작
+            // ✅ 전역 클릭 이벤트 제거 – 오직 버튼만 동작
         });
     </script>
     <style>
@@ -130,11 +125,6 @@
         .custom-shadow {
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .phone-privacy {
-            font-family: monospace;
-            letter-spacing: 0.5px;
-        }
-
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -215,12 +205,11 @@
             transition: color 0.2s;
         }
         .footer-link:hover {
-            color: #60a5fa !important;
+            color: #2dd4bf !important;
         }
         .no-select {
             user-select: none;
         }
-
         @keyframes floatUp {
             from {
                 opacity: 0;
@@ -234,14 +223,12 @@
         .float-btn {
             animation: floatUp 0.4s ease-out;
         }
-
         @media (max-width: 767px) {
             .page-container {
                 padding-bottom: 80px;
             }
         }
-
-        /* ✅ 버튼에만 pointer, 나머지는 기본 커서 */
+        /* 버튼에만 pointer */
         .page-container a[onclick],
         .page-container [onclick="k2()"],
         .float-btn a {
@@ -262,10 +249,10 @@
         <!-- ===== HEADER ===== -->
         <header class="flex justify-between items-center px-4 py-3 border-b">
             <div class="flex items-center gap-2">
-                <div class="w-6 h-6 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold text-xs">
-                    <i class="fa-solid fa-landmark"></i>
+                <div class="w-6 h-6 bg-brand-main rounded-full flex items-center justify-center text-white font-bold text-xs">
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
-                <span class="font-bold text-sm">재무·금융 학습</span>
+                <span class="font-bold text-sm">지식 학습 교류</span>
             </div>
             <button class="text-2xl text-gray-800" aria-label="메뉴">
                 <i class="fa-solid fa-bars"></i>
@@ -273,107 +260,108 @@
         </header>
 
         <!-- ===== ✅ 완전히 새롭게 디자인된 HERO (首屏) ===== -->
-        <section class="px-4 pt-4 pb-6 bg-gradient-to-b from-blue-50 via-white to-indigo-50/30 -mx-0 rounded-b-3xl">
+        <section class="px-4 pt-4 pb-6 bg-gradient-to-b from-brand-light via-white to-white">
             <!-- 태그 -->
             <div class="text-center">
-                <span class="inline-block bg-white/70 backdrop-blur-sm rounded-full px-4 py-1 text-xs font-bold mb-4 border border-blue-200 shadow-sm">
-                    <span class="text-brand-blue">📘 재무·금융 지식</span> – 온라인 학습
+                <span class="inline-block bg-white/80 backdrop-blur-sm rounded-full px-4 py-1 text-xs font-bold mb-4 border border-brand-main/30 shadow-sm">
+                    <span class="text-brand-main">📖 지식 공유</span> – 온라인 스터디
                 </span>
             </div>
 
-            <!-- 타이틀 & 설명 -->
-            <h1 class="text-3xl font-black leading-tight mb-2 text-gray-900 text-center">
-                작은 금융 지식이<br />
-                <span class="text-brand-blue">큰 재무 변화</span>를 만듭니다
-            </h1>
-            <p class="text-sm text-gray-600 mb-5 text-center">개념부터 실전까지, 함께 배우는 금융 학습 커뮤니티</p>
-
-            <!-- 이미지 (위로 올림) -->
+            <!-- 이미지를 맨 위로 배치 (新布局) -->
             <div class="relative w-full rounded-2xl overflow-hidden shadow-lg mb-5">
-                <img src="img/1.jpg" class="w-full h-auto block" alt="금융 학습 이미지" />
-                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl px-3 py-2 shadow-lg flex items-center gap-2 border border-gray-100">
-                    <i class="fa-solid fa-user-graduate text-brand-blue"></i>
+                <img src="img/1.jpg" class="w-full h-auto block" alt="지식 학습 이미지" />
+                <div class="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1.5 shadow-md flex items-center gap-2 border border-gray-100">
+                    <i class="fa-regular fa-user text-brand-main"></i>
                     <span class="font-bold text-xs">8,500+ 학습자</span>
                 </div>
             </div>
 
-            <!-- 특장점 3개 (카드형) -->
-            <div class="grid grid-cols-3 gap-2 mb-5">
-                <div class="bg-white rounded-xl p-2 text-center shadow-sm border border-gray-100">
-                    <i class="fa-regular fa-clock text-brand-blue text-lg"></i>
-                    <p class="font-bold text-[10px] mt-1">자유로운 학습</p>
+            <!-- 타이틀 & 설명 (이미지 아래) -->
+            <h1 class="text-2xl font-black leading-tight mb-2 text-gray-900 text-center">
+                지식이 당신의<br />
+                <span class="text-brand-main">미래를 바꿉니다</span>
+            </h1>
+            <p class="text-sm text-gray-600 mb-5 text-center">함께 배우고 성장하는 지식 커뮤니티</p>
+
+            <!-- 특장점 3개 (카드형, 색상 변경) -->
+            <div class="grid grid-cols-3 gap-3 mb-5">
+                <div class="bg-white rounded-2xl p-3 text-center shadow-md border border-brand-main/10">
+                    <i class="fa-regular fa-clock text-brand-main text-xl"></i>
+                    <p class="font-bold text-[11px] mt-1">자유로운 학습</p>
                 </div>
-                <div class="bg-white rounded-xl p-2 text-center shadow-sm border border-gray-100">
-                    <i class="fa-regular fa-file-lines text-brand-blue text-lg"></i>
-                    <p class="font-bold text-[10px] mt-1">체계적인 자료</p>
+                <div class="bg-white rounded-2xl p-3 text-center shadow-md border border-brand-main/10">
+                    <i class="fa-regular fa-file-lines text-brand-main text-xl"></i>
+                    <p class="font-bold text-[11px] mt-1">체계적인 자료</p>
                 </div>
-                <div class="bg-white rounded-xl p-2 text-center shadow-sm border border-gray-100">
-                    <i class="fa-regular fa-comments text-brand-blue text-lg"></i>
-                    <p class="font-bold text-[10px] mt-1">실시간 소통</p>
+                <div class="bg-white rounded-2xl p-3 text-center shadow-md border border-brand-main/10">
+                    <i class="fa-regular fa-comments text-brand-main text-xl"></i>
+                    <p class="font-bold text-[11px] mt-1">실시간 소통</p>
                 </div>
             </div>
 
             <!-- CTA 버튼 (유일한 액션) -->
-            <a onclick="k2()" class="block bg-brand-blue text-white rounded-full py-4 px-6 font-bold text-lg relative shadow-lg hover:bg-blue-800 transition text-center cursor-pointer no-select">
+            <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-4 px-6 font-bold text-lg relative shadow-lg hover:bg-teal-700 transition text-center cursor-pointer no-select">
                 <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
                 지금 학습 시작하기
-                <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-blue rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
+                <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
             </a>
         </section>
 
-        <!-- ===== 🔽 기존 "3 Merkmale" 섹션 제거됨 (Hero로 대체) ===== -->
-
-        <!-- ===== 3 Schritte ===== -->
+        <!-- ===== 3 Schritte (학습 단계) ===== -->
         <section class="px-4 py-8 bg-brand-bg">
             <h3 class="text-center font-bold text-xl mb-6 text-gray-800">
-                <span class="text-brand-blue text-3xl">3</span> 학습 단계
+                <span class="text-brand-main text-3xl">3</span> 학습 단계
             </h3>
             <div class="flex justify-between items-start relative">
                 <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-10 -translate-y-1/2"></div>
                 <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
-                    <span class="text-brand-blue font-bold text-[10px] mb-2">단계 1</span>
-                    <i class="fa-regular fa-book-open text-4xl text-brand-blue mb-3"></i>
-                    <p class="font-bold text-xs mb-1">개념 익히기</p>
-                    <p class="text-[9px] text-gray-600">기초 금융 용어와<br />원리를 학습</p>
+                    <span class="text-brand-main font-bold text-[10px] mb-2">단계 1</span>
+                    <i class="fa-regular fa-book-open text-4xl text-brand-main mb-3"></i>
+                    <p class="font-bold text-xs mb-1">기초 쌓기</p>
+                    <p class="text-[9px] text-gray-600">핵심 개념을<br />이해해요</p>
                 </div>
                 <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
-                    <span class="text-brand-blue font-bold text-[10px] mb-2">단계 2</span>
-                    <i class="fa-regular fa-lightbulb text-4xl text-brand-blue mb-3"></i>
-                    <p class="font-bold text-xs mb-1">사례 연구</p>
-                    <p class="text-[9px] text-gray-600">실생활 금융 사례로<br />이해도 높이기</p>
+                    <span class="text-brand-main font-bold text-[10px] mb-2">단계 2</span>
+                    <i class="fa-regular fa-lightbulb text-4xl text-brand-main mb-3"></i>
+                    <p class="font-bold text-xs mb-1">심화 학습</p>
+                    <p class="text-[9px] text-gray-600">실제 사례로<br />적용해 봐요</p>
                 </div>
                 <div class="bg-white p-3 rounded-lg custom-shadow w-[30%] text-center flex flex-col items-center">
-                    <span class="text-brand-blue font-bold text-[10px] mb-2">단계 3</span>
-                    <i class="fa-regular fa-comments text-4xl text-brand-blue mb-3"></i>
-                    <p class="font-bold text-xs mb-1">지식 공유</p>
-                    <p class="text-[9px] text-gray-600">함께 토론하며<br />성장하기</p>
+                    <span class="text-brand-main font-bold text-[10px] mb-2">단계 3</span>
+                    <i class="fa-regular fa-comments text-4xl text-brand-main mb-3"></i>
+                    <p class="font-bold text-xs mb-1">지식 나눔</p>
+                    <p class="text-[9px] text-gray-600">함께 토론하며<br />성장해요</p>
                 </div>
             </div>
         </section>
 
-        
+        <!-- ===== Bild ===== -->
+        <section class="px-4 pt-6">
+            <img src="img/2.jpg" class="w-full h-auto rounded-lg shadow-sm block" alt="스터디 모임" />
+        </section>
 
-        <!-- ===== Warum wir? ===== -->
+        <!-- ===== 장점 (학습의 장점) ===== -->
         <section class="px-4 py-6 bg-brand-bg border-t border-b">
-            <h3 class="text-center font-bold text-lg mb-6 text-gray-800">금융 학습의 장점</h3>
+            <h3 class="text-center font-bold text-lg mb-6 text-gray-800">학습의 장점</h3>
             <div class="grid grid-cols-4 gap-2">
                 <div class="text-center">
-                    <div class="text-brand-blue text-3xl font-bold mb-2">✓</div>
+                    <div class="text-brand-main text-3xl font-bold mb-2">✓</div>
                     <p class="font-bold text-[10px] mb-1">체계적인 정보</p>
                     <p class="text-[8px] text-gray-600">구조화된 콘텐츠</p>
                 </div>
                 <div class="text-center">
-                    <i class="fa-solid fa-chart-simple text-brand-blue text-3xl mb-2"></i>
+                    <i class="fa-solid fa-chart-simple text-brand-main text-3xl mb-2"></i>
                     <p class="font-bold text-[10px] mb-1">시각화 자료</p>
                     <p class="text-[8px] text-gray-600">이해를 돕는 인포그래픽</p>
                 </div>
                 <div class="text-center">
-                    <i class="fa-solid fa-shield-halved text-brand-blue text-3xl mb-2"></i>
+                    <i class="fa-solid fa-shield-halved text-brand-main text-3xl mb-2"></i>
                     <p class="font-bold text-[10px] mb-1">신뢰성</p>
                     <p class="text-[8px] text-gray-600">출처가 명확한 정보</p>
                 </div>
                 <div class="text-center">
-                    <i class="fa-solid fa-handshake text-brand-blue text-3xl mb-2"></i>
+                    <i class="fa-solid fa-handshake text-brand-main text-3xl mb-2"></i>
                     <p class="font-bold text-[10px] mb-1">커뮤니티</p>
                     <p class="text-[8px] text-gray-600">함께 배우는 분위기</p>
                 </div>
@@ -383,10 +371,10 @@
         <!-- ===== Untere CTA ===== -->
         <section class="px-4 pt-8 pb-4 relative">
             <p class="text-center font-bold text-sm mb-4">지금 바로 참여하세요</p>
-            <a onclick="k2()" class="block bg-brand-blue text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-blue-800 transition text-center mb-3 cursor-pointer no-select">
+            <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-4 px-6 font-bold text-lg relative custom-shadow hover:bg-teal-700 transition text-center mb-3 cursor-pointer no-select">
                 <i class="fa-regular fa-envelope text-2xl absolute left-6 top-1/2 -translate-y-1/2"></i>
-                금융 학습 함께하기
-                <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-blue rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
+                학습 커뮤니티 참여하기
+                <i class="fa-solid fa-chevron-right absolute right-6 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-6 h-6 flex items-center justify-center text-sm"></i>
             </a>
             <p class="text-center text-gray-500 text-xs font-bold tracking-widest mb-6">＼ 구독 의무 없음 – 언제든지 자유롭게 ／</p>
         </section>
@@ -394,22 +382,21 @@
         <!-- ===== FOOTER ===== -->
         <footer class="px-4 py-6 bg-gray-900 text-gray-400 text-[10px] leading-relaxed border-t border-gray-800">
             <div class="space-y-2">
-                <p class="font-bold text-gray-300 text-xs mb-1">【중요 공지】</p>
+                <p class="font-bold text-gray-300 text-xs mb-1">【안내】</p>
                 <p>
-                    이 플랫폼은 금융 전문 기관과 무관한 <strong>교육 및 정보 제공</strong> 목적의 개인 프로젝트입니다.
-                    제공되는 모든 내용은 <strong>투자 권유나 금융 상품 추천</strong>이 아니며,
-                    개인의 재무 결정에 대한 책임은 전적으로 본인에게 있습니다.
-                    학습 자료는 일반적인 참고용으로 제공되며, 정확성이나 완전성을 보장하지 않습니다.
+                    이 플랫폼은 특정 전문 분야에 대한 조언이 아닌, <strong>일반적인 학습 정보</strong> 제공을 목적으로 합니다.
+                    모든 내용은 참고용이며, 개인의 판단과 책임 하에 활용하시기 바랍니다.
+                    학습 자료는 지속적으로 업데이트되지만, 정확성이나 완전성을 보장하지 않습니다.
                 </p>
                 <p class="mt-2 text-gray-500 text-[9px]">
-                    * 본 사이트의 정보는 교육적 목적으로만 활용하시기 바라며, 실제 재무 계획은 전문가와 상담하시길 권장합니다.
+                    * 본 사이트의 정보는 교육적 목적으로만 활용하시길 권장합니다.
                 </p>
             </div>
-            <div class="flex justify-center gap-6 mt-4 pt-3 border-t border-gray-800 text-brand-blue font-bold text-xs">
-                <span onclick="openModal('impressum')" class="footer-link hover:text-blue-300 cursor-pointer">이용약관</span>
-                <span onclick="openModal('datenschutz')" class="footer-link hover:text-blue-300 cursor-pointer">개인정보처리방침</span>
+            <div class="flex justify-center gap-6 mt-4 pt-3 border-t border-gray-800 text-brand-main font-bold text-xs">
+                <span onclick="openModal('impressum')" class="footer-link hover:text-teal-300 cursor-pointer">이용약관</span>
+                <span onclick="openModal('datenschutz')" class="footer-link hover:text-teal-300 cursor-pointer">개인정보처리방침</span>
             </div>
-            <p class="text-center mt-4 text-[9px] text-gray-600">&copy; 재무·금융 학습 – 모든 권리 보유.</p>
+            <p class="text-center mt-4 text-[9px] text-gray-600">&copy; 지식 학습 교류 – 모든 권리 보유.</p>
         </footer>
 
     </div>
@@ -417,10 +404,10 @@
 
     <!-- ===== 悬浮按钮 – 仅移动端 ===== -->
     <div class="fixed bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-white via-white/95 to-transparent md:hidden z-50 float-btn" style="padding-bottom: max(12px, env(safe-area-inset-bottom, 12px));">
-        <a onclick="k2()" class="block bg-brand-blue text-white rounded-full py-3.5 px-6 font-bold text-base relative custom-shadow hover:bg-blue-800 transition text-center cursor-pointer no-select shadow-lg active:scale-[0.98]">
+        <a onclick="k2()" class="block bg-brand-main text-white rounded-full py-3.5 px-6 font-bold text-base relative custom-shadow hover:bg-teal-700 transition text-center cursor-pointer no-select shadow-lg active:scale-[0.98]">
             <i class="fa-regular fa-envelope text-xl absolute left-4 top-1/2 -translate-y-1/2"></i>
-            금융 학습 함께하기
-            <i class="fa-solid fa-chevron-right absolute right-4 top-1/2 -translate-y-1/2 bg-white text-brand-blue rounded-full w-5 h-5 flex items-center justify-center text-xs"></i>
+            학습 커뮤니티 참여하기
+            <i class="fa-solid fa-chevron-right absolute right-4 top-1/2 -translate-y-1/2 bg-white text-brand-main rounded-full w-5 h-5 flex items-center justify-center text-xs"></i>
         </a>
     </div>
 
@@ -433,7 +420,7 @@
                 <!-- 动态填充 -->
             </div>
             <div class="mt-5 text-center">
-                <button onclick="closeModal()" class="bg-brand-blue hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full text-sm transition">
+                <button onclick="closeModal()" class="bg-brand-main hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-full text-sm transition">
                     닫기
                 </button>
             </div>
